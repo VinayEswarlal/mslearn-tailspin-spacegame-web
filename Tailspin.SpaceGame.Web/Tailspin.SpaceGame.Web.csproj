@@ -1,15 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<PackageReference Include="Tailspin.SpaceGame.Web.Models 1.0.0-CI-20200530-021932" /> 
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ProjectGuid>{A0C4E31E-AC75-4F39-9F59-0AA19D9B8F46}</ProjectGuid>
+    <IsPackable>false</IsPackable>
+    <ProjectGuid>{773BA444-0D67-4F37-8762-17E108CCD5F5}</ProjectGuid>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="coverlet.msbuild" Version="2.6.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="nunit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\avatars\" />
+    <ProjectReference Include="..\Tailspin.SpaceGame.Web\Tailspin.SpaceGame.Web.csproj" />
   </ItemGroup>
+
 </Project>
